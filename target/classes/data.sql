@@ -1,0 +1,10 @@
+INSERT INTO cards (word) VALUES ('Art');
+INSERT INTO cards (word) VALUES ('Music');
+INSERT INTO cards (word) VALUES ('History');
+INSERT INTO cards (word) VALUES ('Science');
+INSERT INTO cards (word) VALUES ('Literature');
+INSERT INTO cards (word) VALUES ('Philosophy');
+INSERT INTO cards (word) VALUES ('Geography');
+INSERT INTO cards (word) VALUES ('Politics');
+INSERT INTO cards (word) VALUES ('Economics');
+INSERT INTO cards (word) VALUES ('Religion');

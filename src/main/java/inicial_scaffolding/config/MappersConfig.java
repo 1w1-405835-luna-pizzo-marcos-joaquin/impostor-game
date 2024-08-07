@@ -12,21 +12,23 @@ import java.security.PublicKey;
 
 @Configuration
 public class MappersConfig {
+
     @Bean
-    public ModelMapper modelMaper(){
-        ModelMapper modelMapper=new ModelMapper();
-        return modelMapper;
+    public ModelMapper modelMapper() {
+        return new ModelMapper();
     }
+
     @Bean("mergerMapper")
-    public ModelMapper mergerMapper(){
-        ModelMapper mapper=new ModelMapper();
+    public ModelMapper mergerMapper() {
+        ModelMapper mapper =  new ModelMapper();
         mapper.getConfiguration()
                 .setPropertyCondition(Conditions.isNotNull());
         return mapper;
     }
+
     @Bean
-    public ObjectMapper objectMapper(){
-        ObjectMapper objectMapper=new ObjectMapper();
+    public ObjectMapper objectMapper() {
+        ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule());
         return objectMapper;
     }
